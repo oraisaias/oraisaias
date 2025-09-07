@@ -27,6 +27,12 @@
 
 - 🌱 I’m currently learning **LangGraph, animaciones avanzadas y performance en móviles**
 
+
+### 🌱 Actividad Reciente
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
+
 <!--
 **oraisaias/oraisaias** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
