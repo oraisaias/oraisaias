@@ -20,5 +20,12 @@ jobs:
       
       - name: GitHub - Activity - Readme
         uses: jamesgeorge007/github-activity-readme@v0.4.4
+        with:
+          # Your GitHub username
+          GH_USERNAME: ${{ github.repository_owner }}
+          # The maximum number of lines populated in your readme file
+          MAX_LINES: 10
+          # The file location to write changes to
+          TARGET_FILE: README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
