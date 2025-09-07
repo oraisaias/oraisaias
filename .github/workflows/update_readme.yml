@@ -9,8 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Update Profile README
-    steps: 
-      - uses: actions/checkout@v4.2.2
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: GitHub - Activity - Readme
         uses: jamesgeorge007/github-activity-readme@v0.4.4
         env:
