@@ -1,24 +1,20 @@
-  - name: Auto User Activity
+            - name: GitHub - Activity - Readme
   # You may pin to the exact commit or the version.
-  # uses: offensive-vk/auto-user-activity@50accec652aec36f970aa924d899eddc22d53172
-  uses: offensive-vk/auto-user-activity@v7-beta
+  # uses: jamesgeorge007/github-activity-readme@df57d5cab9b53277241f93190e176b38dd95eb1a
+  uses: jamesgeorge007/github-activity-readme@v0.4.4
   with:
-    # Your Github PAT or Auth Token
-    token: # optional
-    # Your GitHub Username
-    username: # optional
+    # Your GitHub username
+    GH_USERNAME: # optional, default is ${{ github.repository_owner }}
     # Name of the committer
-    committer: # optional, default is github-actions[bot]
+    COMMIT_NAME: # optional, default is github-actions[bot]
     # Email of the committer
-    committer-email: # optional, default is github-actions[bot]@users.noreply.github.com
+    COMMIT_EMAIL: # optional, default is 41898282+github-actions[bot]@users.noreply.github.com
     # Commit message used while committing to the repo
-    commit-msg: # optional, default is :zap: Update Recent Activity
+    COMMIT_MSG: # optional, default is :zap: Update README with the recent activity
     # The maximum number of lines populated in your readme file
-    max-lines: # optional, default is 10
-    # The file location to write changes to.
-    target-file: # optional, default is README.md
+    MAX_LINES: # optional, default is 5
+    # The file location to write changes to
+    TARGET_FILE: # optional, default is README.md
     # Commit message used when there are no updates
-    empty-commit-msg: # optional, default is empty commit to keep workflow active after 60 days of no activity.
-    # Whether to enable empty commit or not.
-    enable-empty-commit: # optional
+    EMPTY_COMMIT_MSG: # optional, default is :memo: empty commit to keep workflow active after 60 days of no activity
           
