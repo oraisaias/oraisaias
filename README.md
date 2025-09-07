@@ -29,7 +29,7 @@
 
 
 ### 🌱 Actividad Reciente
-<!--RECENT_ACTIVITY:start-->
+<!--START_SECTION:activity-->
 
 <!--END_SECTION:activity-->
 
